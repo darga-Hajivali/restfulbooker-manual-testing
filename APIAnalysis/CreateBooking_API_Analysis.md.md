@@ -6,6 +6,14 @@ POST /booking
 ## Purpose
 Creates a new booking.
 
+## Headers
+Content-Type: application/json
+
+## Tools Used
+- Postman
+- Swagger/OpenAPI
+- GitHub
+
 ---
 
 # Positive Scenario - Valid Booking
@@ -18,6 +26,12 @@ Booking should be created successfully.
 
 ## Actual Behavior
 Booking created successfully with generated booking ID.
+
+## Validations
+- Status code validation
+- Booking ID validation
+- Response body validation
+- Data validation
 
 ---
 
@@ -35,8 +49,7 @@ API returned 500 Internal Server Error.
 ## Observation
 Backend validation is not handled properly for missing mandatory fields.
 
-
-
+---
 
 # Negative Scenario - Invalid Price
 
