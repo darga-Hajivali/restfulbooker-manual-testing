@@ -61,3 +61,17 @@ API returned 404 Not Found.
 
 ## Observation
 API properly handled non-existing booking resource request.
+
+# Positive Scenario - Updated Booking Validation
+
+## Request
+GET API executed using updated booking ID.
+
+## Expected Behavior
+API should return updated booking details.
+
+## Actual Behavior
+Updated booking details returned successfully with status code 200 OK.
+
+## Observation
+GET API successfully retrieved updated booking information after PUT update operation.

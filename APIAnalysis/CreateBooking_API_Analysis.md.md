@@ -6,14 +6,6 @@ POST /booking
 ## Purpose
 Creates a new booking.
 
-## Headers
-Content-Type: application/json
-
-## Tools Used
-- Postman
-- Swagger/OpenAPI
-- GitHub
-
 ---
 
 # Positive Scenario - Valid Booking
@@ -26,12 +18,6 @@ Booking should be created successfully.
 
 ## Actual Behavior
 Booking created successfully with generated booking ID.
-
-## Validations
-- Status code validation
-- Booking ID validation
-- Response body validation
-- Data validation
 
 ---
 
@@ -49,7 +35,8 @@ API returned 500 Internal Server Error.
 ## Observation
 Backend validation is not handled properly for missing mandatory fields.
 
----
+
+
 
 # Negative Scenario - Invalid Price
 
@@ -96,3 +83,44 @@ API became unresponsive.
 
 ## Observation
 Backend validation handling appears weak for malformed date inputs.
+
+# Get Booking API Analysis
+
+## Endpoint
+GET /booking/{id}
+
+## Purpose
+Retrieves booking details using booking ID.
+
+---
+
+# Positive Scenario - Valid Booking ID
+
+## Request
+Valid booking ID passed in path parameter.
+
+## Expected Behavior
+API should return correct booking details.
+
+## Actual Behavior
+Booking details returned successfully.
+
+## Validations
+- Status code validation
+- Firstname validation
+- Lastname validation
+- Response structure validation
+
+# Negative Scenario - Invalid Booking ID
+
+## Request
+Invalid string booking ID passed in path parameter.
+
+## Expected Behavior
+API should reject invalid booking ID.
+
+## Actual Behavior
+(Write actual observed behavior)
+
+## Observation
+(Your analysis)
